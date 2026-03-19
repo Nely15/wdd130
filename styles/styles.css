@@ -1,52 +1,73 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333333;
+    --primary-font: "Arial, sans-serif";
+    --heading-font-size: 2rem;
+
+    --nav-bg-color: darkblue;
+    --nav-text-color: white;
+    --nav-padding: 10px;
+    --nav-link-padding: 20px;
+
+    --main-max-width: 840px;
+    --main-img-border-color: darkblue;
+    --main-img-box-shadow: 0 0 30px gray;
+
+    --aside-bg-color: #eee;
+    --aside-border-color: rgba(0 0 0 / 0.2);
+    --aside-text-color: #456;
+    --aside-padding: 3rem;
+    --aside-margin: 3rem;
+
+    --footer-border-color: #000;
+    --footer-margin-top: 30px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--nav-bg-color);
+    padding: var(--nav-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--nav-text-color);
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--nav-bg-color);
+    /* darkblue */
+    font-size: var(--heading-font-size);
+    font-family: var(--primary-font);
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
+    font-family: var(--primary-font);
+    color: var(--main-text-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid darkblue;
+    border: 1px solid var(--main-img-border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 0;
+    box-shadow: var(--main-img-box-shadow);
 }
 
 aside {
     width: 50rem;
-    margin: 3rem;
-    border: 2px solid rgba(0 0 0 / 0.2);
-    padding: 3rem;
-    background-color: #eee;
-    color: #456;
+    margin: var(--aside-margin);
+    border: 2px solid var(--aside-border-color);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
     text-align: center;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
 footer {
-    margin-top: 30px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: 1px solid var(--footer-border-color);
     text-align: center;
 }
 /* This is a comment */
