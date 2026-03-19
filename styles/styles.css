@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 13.95px;
+    font-family: Roboto Slab, Arial, sans-serif;
+}
 :root {
     --main-bg-color: #f0f0f0;
     --main-text-color: #333333;
@@ -24,50 +33,77 @@
 }
 
 nav {
-    background-color: var(--nav-bg-color);
-    padding: var(--nav-padding);
+    background-color: darkblue;
+    padding: 10px;
 }
 
 nav a {
-    color: var(--nav-text-color);
+    color: white;
     display: block;
-    padding: var(--nav-link-padding);
+    padding: 20px;
 }
 
 h1 {
-    color: var(--nav-bg-color);
-    /* darkblue */
-    font-size: var(--heading-font-size);
-    font-family: var(--primary-font);
+    color: darkblue;
+    padding: .5rem
 }
 
 main {
-    max-width: var(--main-max-width);
-    font-family: var(--primary-font);
-    color: var(--main-text-color);
+    max-width: 840px;
 }
 
 main img {
-    width: 150px;
+    
+    width: 170px;
     height: auto;
-    border: 1px solid var(--main-img-border-color);
+    border: 1px solid darkblue;
     padding: 2px;
-    box-shadow: var(--main-img-box-shadow);
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 aside {
     width: 50rem;
-    margin: var(--aside-margin);
-    border: 2px solid var(--aside-border-color);
-    padding: var(--aside-padding);
-    background-color: var(--aside-bg-color);
-    color: var(--aside-text-color);
+    margin: 3rem;
+    border: 2px solid rgba(0 0 0 / 0.2);
+    padding: 3rem;
+    background-color: #eee;
+    color: #456;
     text-align: center;
+    position: relative;
+}
+
+aside img {
+    width: 450px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 22px;
+    left: 190px;
+    color: #800020
 }
 
 footer {
-    margin-top: var(--footer-margin-top);
-    border-top: 1px solid var(--footer-border-color);
+    margin-top: 30px;
+    border-top: 1px solid #000;
     text-align: center;
 }
-/* This is a comment */
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #333;
+}
+
+.indent {
+    padding-left: 3rem;
+}
