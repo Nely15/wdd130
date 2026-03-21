@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --primary-color: #054305;
+    --secondary-color: #134a53;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --accent2-color: #f5b616;
 
     --heading-font: Arial, sans-serif;
     --body-font: Verdana, sans-serif;
@@ -24,13 +24,12 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    color: var(--secondary-color);
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -55,7 +54,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -88,10 +87,12 @@ section {
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
 }
 
 section h2 {
+
     margin-bottom: 10px;
     border-bottom: 2px solid var(--accent2-color);
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
