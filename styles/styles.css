@@ -32,6 +32,9 @@ body {
 
     --footer-border-color: #000;
     --footer-margin-top: 30px;
+
+    --box-bg-color: #f8d7da;
+    --box-text-color: #721c24;
 }
 
 nav {
@@ -55,6 +58,7 @@ h1 {
     color: darkblue;
     padding: .5rem;
     border-bottom: 2px solid darkblue;
+    text-align: center;
 }
 
 header,
@@ -84,13 +88,14 @@ aside {
 
 main img {
 
-    width: 170px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid darkblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0.25in 0 1rem 1rem;
 }
 
 p {
@@ -98,14 +103,14 @@ p {
 }
 
 aside img {
-    width: 450px;
+    width: 275px;
     height: auto;
 }
 
 aside h2 {
-    position: absolute;
-    top: 22px;
-    left: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #800020
 }
 
@@ -120,8 +125,8 @@ footer {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #ddd;
-    color: #333;
+    background-color: var(--box-bg-color);
+    color: var(--box-text-color);
 }
 
 .indent {
