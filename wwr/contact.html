@@ -27,91 +27,114 @@
     <main>
 
         <section class="contact-info">
-            <h1>Contact Us</h1>
-            <p><strong>Address:</strong>123 River Rd. Adventure City, TX 75001</p>
+            <h1>White Water Rafting Company</h1>
+            <p><strong>Address:</strong> 123 River Rd.</p>
+            <p>Adventure City, TX 75001</p>
             <p><strong>Phone:</strong> (956) 456-7890</p>
             <p><strong>Email:</strong>info@whitewaterrafting.com</p>
         </section>
 
+        <!--Map & form side by side-->
+        <section class="contact-layout">
 
-        <!--Google map-->
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27680.239993284886!2d-98.17087382602541!3d29.863408669956836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting!5e0!3m2!1sen!2sus!4v1775325072054!5m2!1sen!2sus"
-              width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <!--Google map-->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27680.239993284886!2d-98.17087382602541!3d29.863408669956836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting!5e0!3m2!1sen!2sus!4v1775325072054!5m2!1sen!2sus"
+                  width="600" height="450" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!--Form-->
+            <div class="contact-form">
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+
+                    <p>Message Purpose</p>
+                    <label><input type="radio" name="purpose"> General Inquiry</label>
+                    <label><input type="radio" name="purpose"> Reservation Question</label>
+                    <label><input type="radio" name="purpose"> Website Suggestion</label>
+
+                    <label>Message</label>
+                    <textarea placeholder="Type here"></textarea>
+
+                    <label>
+                        <input type="checkbox">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
         </section>
-
 
         <!-- Employee profiles -->
         <section class="team">
-            <h2>Meet Our Team</h2>
+            <h2>We Are Here to Serve You</h2>
+
             <div class="team-grid">
 
                 <figure>
                     <img src="images/employee1.jpg" alt="Stephen Tyler, Lead Guide">
-                    <figcaption>Stephen Tyler - Lead Guide</figcaption>
+                    <figcaption><strong>Stephen<br>Tyler</strong>
+                        <hr>
+                        Lead River Guide
+                    </figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee2.jpg" alt="Robert Williams, Safety Officer">
-                    <figcaption>Robert Williams - Safety Officer</figcaption>
+                    <figcaption><strong>Robert<br>Williams</strong>
+                        <hr>
+                        Safety Officer
+                    </figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee3.jpg" alt="Daniel Garza, Operations Manager">
-                    <figcaption>Daniel Garza - Operations Manager</figcaption>
+                    <figcaption><strong>Daniel<br>Garza</strong>
+                        <hr>
+                        Operations Manager
+                    </figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee4.jpg" alt="Joseph Long, Equipment Technician">
-                    <figcaption>Joseph Long - Equipment Technician</figcaption>
+                    <figcaption><strong>Joseph<br>Long</strong>
+                        <hr>
+                        Equipment Technician
+                    </figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee5.jpg" alt="Elizabeth Carson, Social Media Executive">
-                    <figcaption>Elizabeth Carson - Social Media Executive</figcaption>
+                    <figcaption><strong>Elizabeth<br>Carson</strong>
+                        <hr>
+                        Social Media Executive
+                    </figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee6.jpg"
                       alt="Nathan Mcpherson, Sales & Booking Manager ">
-                    <figcaption>Nathan Mcpherson - Sales & Booking Manager </figcaption>
+                    <figcaption><strong>Nathan<br>Mcpherson</strong>
+                        <hr>
+                        Sales & Booking Manager
+                    </figcaption>
                 </figure>
 
             </div>
         </section>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <p>Purpose of Message:</p>
-                <label><input type="radio" name="purpose" value="inquiry" required> General
-                    Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation
-                    Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website
-                    Suggestion</label>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
     </main>
 
     <footer>

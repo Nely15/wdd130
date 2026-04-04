@@ -175,20 +175,38 @@ footer p {
     width: 30px;
 }
 
+.contact-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    padding: 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
 .map iframe {
-    border: none;
+
     width: 100%;
-    border-radius: 8px;
+    height: 300px;
+    border: none;
 }
 
 .team-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
 .team-grid img {
-    width: 100%;
+    width: 120px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
@@ -198,6 +216,23 @@ footer p {
     font-size: 0.85rem;
     margin-top: 5px;
     font-weight: bold;
+}
+
+.team-grid figcaption hr {
+
+    margin: 8px auto;
+    border: 0;
+    border-top: 1px solid var(--accent1-color);
+
+}
+
+.team-grid figcaption strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.team h2 {
+    margin-bottom: 20px;
 }
 
 .contact-form form {
