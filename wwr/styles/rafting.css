@@ -180,6 +180,7 @@ footer p {
 .contact-info {
     text-align: center;
     padding: 10px;
+
 }
 
 .contact-info p {
@@ -192,6 +193,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: start;
+
 }
 
 .map iframe {
@@ -304,6 +306,7 @@ footer p {
 
 .cta {
     text-align: center;
+
 }
 
 .cta-button {
@@ -354,6 +357,7 @@ footer p {
     gap: 25px;
     padding: 20px;
     justify-items: center;
+
 }
 
 .trip-card {
@@ -403,6 +407,7 @@ footer p {
     border-collapse: collapse;
     table-layout: fixed;
     margin: 0 auto;
+
 }
 
 .trips-table th,
